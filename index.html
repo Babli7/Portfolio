@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Hassan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#home" class="logo">Ali Hassan</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="tag">Computer Science Graduate</p>
+        <h1>Ali Hassan</h1>
+        <p class="subtitle">
+          <span id="typingText"></span><span class="typing-cursor">|</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.png" alt="Ali Hassan profile photo">
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="about-panel">
+        <div class="about-badge">AH</div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I have months of internship experience as an Intern Web Developer at Next Age Solutions, where I worked on real
+            projects and improved my problem-solving and teamwork skills. I enjoy learning new technologies and building
+            practical, user-friendly applications.
+          </p>
+          <div class="about-meta-grid">
+            <div class="about-meta-item">
+              <span>Location</span>
+              <strong> Pakistan</strong>
+            </div>
+            <div class="about-meta-item">
+              <span>Education</span>
+              <strong>BS Computer Science</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Work Experience</h2>
+        <article class="card">
+          <h3>Intern Web Developer</h3>
+          <p class="meta">Next Age Solutions | Lahore, Pakistan | Dec 2025 - Apr 2026</p>
+          <p>
+            Worked on clean and accessible web interfaces with focus on frontend development while also contributing to full-stack tasks.
+          </p>
+          <p>
+            <strong>Department:</strong> Batch-8 |
+            <strong>Email:</strong> info@nextagesolutions.com |
+            <strong>Website:</strong> <a href="https://nextagesolutions.com/" target="_blank" rel="noopener">nextagesolutions.com</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+      <h2>Education & Training</h2>
+      <div class="edu-training-panel">
+        <div class="et-column">
+          <h3 class="et-title">🎓 Education</h3>
+          <div class="et-timeline">
+            <article class="et-item">
+              <p class="et-years">2021 - 2025</p>
+              <h4>BS Computer Science</h4>
+              <p>Mir Chakar Khan Rind University of Technology, D.G. Khan</p>
+            </article>
+            
+          </div>
+        </div>
+        <div class="et-column">
+          <h3 class="et-title">🛠️ Training</h3>
+          <div class="et-timeline">
+            <article class="et-item">
+              <p class="et-years">Jul 2025 - Sep 2025</p>
+              <h4>Web Development Training</h4>
+              <p>Next Age Solutions</p>
+              <a href="https://nextagesolutions.com/" target="_blank" rel="noopener">nextagesolutions.com</a>
+            </article>
+            <article class="et-item">
+              <p class="et-years">Feb 2021 - Jul 2021</p>
+              <h4>Certificate in Computer Applications</h4>
+              <p>Government Technical Training Institute, D.G. Khan</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+        </div>
+        <div id="projectGrid" class="project-grid">
+          <article class="card project-card" data-category="ai">
+            <h3>Real-Time Object Detection (FYP)</h3>
+            <p class="meta">Jan 2024 - Dec 2025</p>
+            <p>
+              Built a real-time object detection system using YOLOv7, including dataset annotation, custom model fine-tuning, and optimized inference pipeline.
+            </p>
+            <p class="stack">Python, YOLOv7, PyTorch, OpenCV, LabelImg, NumPy, Google Colab</p>
+          </article>
+          <article class="card project-card" data-category="web">
+            <h3>Client Portfolio & Landing Sites</h3>
+            <p class="meta">Dec 2025</p>
+            <p>
+              Designed and deployed websites for local clients including a photographer portfolio and a tutoring service landing page.
+            </p>
+            <p class="stack">HTML, CSS, JavaScript, Figma</p>
+          </article>
+          <article class="card project-card" data-category="web">
+            <h3>E-commerce Store Web App</h3>
+            <p class="meta">Dec 2025 - Feb 2026</p>
+            <p>
+              Developed an end-to-end e-commerce application with product browsing, cart management, secure payments, and order tracking.
+            </p>
+            <p class="stack">HTML, CSS, JavaScript, React, Firebase, REST APIs, Netlify</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Technical Skills</h2>
+      <div class="skills-wrap">
+        <div class="card">
+          <h3>Programming</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>AI / ML / DL</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools & Software</h3>
+          <ul>
+            <li>MS Office</li>
+            <li>Microsoft Project</li>
+            <li>Android Studio</li>
+            <li>Visual Studio Code</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <ul>
+            <li>Urdu (Mother Tongue)</li>
+            <li>English</li>
+            <li>Panjabi / Punjabi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Let us build something great together.</p>
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p class="contact-direct">
+          Or email directly at <a href="mailto:ah074023@gmail.com">ah074023@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Ali Hassan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
